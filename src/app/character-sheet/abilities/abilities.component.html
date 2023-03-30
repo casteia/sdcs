@@ -1,27 +1,25 @@
 <div>
-    <h2>Character Abilities</h2>
-    <div>
-      <label>Strength:</label>
-      <input type="text" pattern="\d*" inputmode="numeric" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="strength" name="strength" />
+  <h2>Character Abilities</h2>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-6 mb-2">
+        <div class="input-group">
+          <span class="input-group-text bg-light" id="strength">Strength</span>
+          <input type="text" pattern="\d*" inputmode="numeric" maxlength="2"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="strength" name="strength"
+            class="form-control bg-dark text-white" />
+          <span class="input-group-text bg-light">+1</span>
+        </div>
+      </div>
     </div>
-    <div>
-      <label>Dexterity:</label>
-      <input type="text" pattern="\d*" inputmode="numeric" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="dexterity" name="dexterity" />
+    <div class="col-md-6 mb-2">
+      <div class="input-group">
+        <span class="input-group-text bg-light" id="dexterity">Dexterity</span>
+        <input type="text" pattern="\d*" inputmode="numeric" maxlength="2"
+          oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="dexterity" name="dexterity"
+          class="form-control bg-dark text-white" />
+        <span class="input-group-text bg-light">+1</span>
+      </div>
     </div>
-    <div>
-      <label>Constitution:</label>
-      <input type="text" pattern="\d*" inputmode="numeric" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="constitution" name="constitution" />
-    </div>
-    <div>
-      <label>Intelligence:</label>
-      <input type="text" pattern="\d*" inputmode="numeric" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="intelligence" name="intelligence" />
-    </div>
-    <div>
-      <label>Wisdom:</label>
-      <input type="text" pattern="\d*" inputmode="numeric" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="wisdom" name="wisdom" />
-    </div>
-    <div>
-      <label>Charisma:</label>
-      <input type="text" pattern="\d*" inputmode="numeric" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" [(ngModel)]="charisma" name="charisma" />
-    </div>
-  </div>
+  </div>  
+</div>

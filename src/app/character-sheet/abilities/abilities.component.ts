@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbilitiesComponent implements OnInit {
 
-  strength: number = 10;
+  strength: number = 12;
   dexterity: number = 10;
   constitution: number = 10;
   intelligence: number = 10;
